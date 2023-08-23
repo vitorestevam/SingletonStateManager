@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "lit-html": "^2.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.4",
+    "tsc-alias": "^1.8.7"
+  },
+  "_moduleAliases": {
+    "@modules": "node_modules"
+  },
+  "scripts": {
+    "build": "tsc && tsc-alias"
+  }
+}
