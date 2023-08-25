@@ -1,11 +1,12 @@
 import React from "react"
+import UserNameVault from "./vaults/UserNameVault";
 
 function UserForm() {
     const submitHandler: React.FormEventHandler = (event) => {
         event?.preventDefault();
         const data = new FormData(event.target as HTMLFormElement);
 
-        alert(data.get("name"))
+        UserNameVault.getInstance().setUserName(data.get("name") as string);
     }
 
     return (
